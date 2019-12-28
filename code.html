@@ -1,0 +1,19 @@
+<html class="a-fullscreen">
+<head>
+  <title>3D Code Visualizer</title>
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script> 
+  <script src="https://unpkg.com/aframe-controller-cursor-component@0.2.7/dist/aframe-controller-cursor-component.min.js"></script> 
+</head>
+<body>
+<a-scene background="color: #111111" inspector keyboard-shortcuts screenshot vr-mode-ui device-orientation-permission-ui>
+  <a-assets>
+    <a-mixin id="text" text="color: #FFFFFF; align: center; anchor: center; value: org.apache.wicket.something.something"></a-mixin>
+  </a-assets>
+    <a-text position="-0.2 1.2 -2.8" mixin="text" font="kelsonsans" width="2.0" text="" geometry="primitive:plane; width: auto; height: 0.2; color:#4444FF"></a-text>
+    <!--
+    <a-entity vive-controls="hand: left"></a-entity>
+    <a-entity vive-controls="hand: right" controller-cursor></a-entity>
+     -->
+  </a-scene>
+</body>
+</html>
